@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>列表页</title>
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/layout.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/resetPage-rem.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body style="padding-top:0.88rem; ">
+<div class="wrap list_page">
+    <!--header-->
+    <div class="header">
+        <a class="fl return_icon" href="index.html"></a>
+        <h1 class="fl title">化学奖</h1>
+    </div>
+    <div class="sort">
+        <div class="title_wrap">
+            <div class="title">
+                <ul class="clearfix">
+                    <li>
+                        <span class="text">按年份</span>
+                        <span class="icon"></span>
+                    </li>
+                    <li>
+                        <span class="text">按奖项</span>
+                        <span class="icon"></span>
+                    </li>
+                    <li class="border_none">
+                        <span class="text">按国家</span>
+                        <span class="icon"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="list">
+            <ul >
+                <li >
+                    <a class="clearfix" href="javascript:" >
+                        <div class="fl img">
+                            <img src="images/picture_1.png" alt=""/>
+                        </div>
+                        <div class="fr text">
+                            <h2>雅各布斯·亨里克斯·范托夫</h2>
+                            <p>1901年获诺贝尔化学奖，主要贡献化学动力学和渗叶绿素</p>
+                            <h3>荷兰化学家</h3>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="clearfix" href="javascript:">
+                        <div class="fl img">
+                            <img src="images/picture_2.png" alt=""/>
+                        </div>
+                        <div class="fr text">
+                            <h2>赫尔曼·埃米尔·费歇尔</h2>
+                            <p>1930年诺贝尔化学奖，著名成就对叶红素和叶绿素叶绿素</p>
+                            <h3>德国化学家</h3>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="clearfix" href="javascript:">
+                        <div class="fl img">
+                            <img src="images/picture_2.png" alt=""/>
+                        </div>
+                        <div class="fr text">
+                            <h2>赫尔曼·埃米尔·费歇尔</h2>
+                            <p>1930年诺贝尔化学奖，著名成就对叶红素和叶绿素叶绿素</p>
+                            <h3>德国化学家</h3>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="clearfix" href="javascript:">
+                        <div class="fl img">
+                            <img src="images/picture_2.png" alt=""/>
+                        </div>
+                        <div class="fr text">
+                            <h2>赫尔曼·埃米尔·费歇尔</h2>
+                            <p>1930年诺贝尔化学奖，著名成就对叶红素和叶绿素叶绿素</p>
+                            <h3>德国化学家</h3>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="clearfix" href="javascript:">
+                        <div class="fl img">
+                            <img src="images/picture_2.png" alt=""/>
+                        </div>
+                        <div class="fr text">
+                            <h2>赫尔曼·埃米尔·费歇尔</h2>
+                            <p>1930年诺贝尔化学奖，著名成就对叶红素和叶绿素叶绿素</p>
+                            <h3>德国化学家</h3>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="clearfix" href="javascript:">
+                        <div class="fl img">
+                            <img src="images/picture_2.png" alt=""/>
+                        </div>
+                        <div class="fr text">
+                            <h2>赫尔曼·埃米尔·费歇尔</h2>
+                            <p>1930年诺贝尔化学奖，著名成就对叶红素和叶绿素叶绿素</p>
+                            <h3>德国化学家</h3>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div style="display: none;" class="pop_list">
+            <div class="pop_bd"></div>
+            <ul>
+                <li style="display: none" class="list_page">
+                    <ul>
+                        <li>2016</li>
+                        <li>2015</li>
+                        <li>2014</li>
+                        <li>2013</li>
+                        <li>2012</li>
+                        <li>2011</li>
+                    </ul>
+                </li>
+                <li style="display: none" class="list_award">
+                    <ul>
+                        <li>
+                            <span class="icon icon1"></span>
+                            <span class="text">化学奖</span>
+                        </li>
+                        <li>
+                            <span class="icon icon2"></span>
+                            <span class="text">和平奖</span>
+                        </li>
+                        <li>
+                            <span class="icon icon3"></span>
+                            <span class="text">文学奖</span>
+                        </li>
+                        <li>
+                            <span class="icon icon4"></span>
+                            <span class="text">物理奖</span>
+                        </li>
+                        <li>
+                            <span class="icon icon5"></span>
+                            <span class="text">生理学或医学奖</span>
+                        </li>
+                        <li>
+                            <span class="icon icon6"></span>
+                            <span class="text">经济学奖</span>
+                        </li>
+                    </ul>
+                </li>
+                <li style="display: none" class="list_countries">
+                    <div class="search_list">
+                        <ul>
+                            <li>
+                                <div style="border-top: none"  class="list_title">热门国家</div>
+                                <ul class="list_main">
+                                    <li class="clearfix border_none">
+                                        <span>中国</span>
+                                        <span>德国</span>
+                                        <span class="border_none">法国</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span>意大利</span>
+                                        <span>瑞典</span>
+                                        <span class="border_none">挪威</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span>美国</span>
+                                        <span>奥地利</span>
+                                        <span class="border_none">美国</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="list_title fixed_letter">热门国家</div>
+                                <div class="state_warp">
+                                  <!--  <div id="A" class="list_title letter_title ">
+                                        <div style="display: none;" class="list_title letter_h">A</div>
+                                        <div>A</div>
+                                    </div>
+                                    <ul>
+                                        <li class="border_none">阿比让</li>
+                                        <li>阿伯丁</li>
+                                        <li>阿布贾</li>
+                                        <li>阿达纳</li>
+                                        <li>阿德莱德</li>
+                                    </ul>-->
+                                    <div id="B" class="list_title letter_title ">
+                                        <div class="list_title letter_h">A</div>
+                                        <div>B</div>
+                                    </div>
+                                    <ul>
+                                        <li class="border_none">阿比让</li>
+                                        <li>阿伯丁</li>
+                                        <li>阿布贾</li>
+                                        <li>阿达纳</li>
+                                        <li>阿德莱德</li>
+                                    </ul>
+                                    <div id="C" class="list_title letter_title ">
+                                         <div class="list_title letter_h">B</div>
+                                         <div>C</div>
+                                    </div>
+                                    <ul>
+                                        <li class="border_none">阿比让</li>
+                                        <li>阿伯丁</li>
+                                        <li>阿布贾</li>
+                                        <li>阿达纳</li>
+                                        <li>阿德莱德</li>
+                                        <li>阿伯丁</li>
+                                        <li>阿布贾</li>
+                                        <li>阿达纳</li>
+                                        <li>阿德莱德</li>
+                                    </ul>
+                                    <div id="D" class="list_title letter_title ">
+                                        <div class="list_title letter_h">C</div>
+                                        <div>D</div>
+                                    </div>
+                                    <ul>
+                                        <li class="border_none">阿比让</li>
+                                        <li>阿伯丁</li>
+                                        <li>阿布贾</li>
+                                        <li>阿达纳</li>
+                                        <li>阿德莱德</li>
+                                    </ul>
+                                   <!-- <div id="E" class="list_title letter_title ">
+                                        <div class="list_title letter_h">D</div>
+                                        <div>E</div>
+                                    </div>
+                                    <ul>
+                                        <li class="border_none">阿比让</li>
+                                        <li>阿伯丁</li>
+                                        <li>阿布贾</li>
+                                        <li>阿达纳</li>
+                                        <li>阿德莱德</li>
+                                    </ul>-->
+                                        <div id="F" class="list_title letter_title ">
+                                        <div class="list_title letter_h">E</div>
+                                        <div>F</div>
+                                    </div>
+                                    <ul>
+                                        <li class="border_none">阿比让</li>
+                                        <li>阿伯丁</li>
+                                        <li>阿布贾</li>
+                                        <li>阿达纳</li>
+                                        <li>阿德莱德</li>
+                                    </ul>
+                                    <div id="G" class="list_title letter_title ">
+                                        <div class="list_title letter_h">E</div>
+                                        <div>G</div>
+                                    </div>
+                                    <ul>
+                                        <li class="border_none">阿比让</li>
+                                        <li>阿伯丁</li>
+                                        <li>阿布贾</li>
+                                        <li>阿达纳</li>
+                                        <li>阿德莱德</li>
+                                    </ul>
+                                    <div id="H" class="list_title letter_title ">
+                                        <div class="list_title letter_h">G</div>
+                                        <div>H</div>
+                                    </div>
+                                    <ul>
+                                        <li class="border_none">阿比让</li>
+                                        <li>阿伯丁</li>
+                                        <li>阿布贾</li>
+                                        <li>阿达纳</li>
+                                        <li>阿德莱德</li>
+                                    </ul>
+                                    <div id="I" class="list_title letter_title ">
+                                        <div class="list_title letter_h">H</div>
+                                        <div>I</div>
+                                    </div>
+                                    <ul>
+                                        <li class="border_none">阿比让</li>
+                                        <li>阿伯丁</li>
+                                        <li>阿布贾</li>
+                                        <li>阿达纳</li>
+                                        <li>阿德莱德</li>
+                                    </ul>
+                                    <div id="J" class="list_title letter_title ">
+                                        <div class="list_title letter_h">I</div>
+                                        <div>J</div>
+                                    </div>
+                                    <ul>
+                                        <li class="border_none">阿比让</li>
+                                        <li>阿伯丁</li>
+                                        <li>阿布贾</li>
+                                        <li>阿达纳</li>
+                                        <li>阿德莱德</li>
+                                    </ul>
+                                    <div id="K" class="list_title letter_title ">
+                                        <div class="list_title letter_h">J</div>
+                                        <div>K</div>
+                                    </div>
+                                    <ul>
+                                        <li class="border_none">阿比让</li>
+                                        <li>阿伯丁</li>
+                                        <li>阿布贾</li>
+                                        <li>阿达纳</li>
+                                        <li>阿德莱德</li>
+                                    </ul>
+                                    <div id="L" class="list_title letter_title ">
+                                        <div class="list_title letter_h">K</div>
+                                        <div>L</div>
+                                    </div>
+                                    <ul>
+                                        <li class="border_none">阿比让</li>
+                                        <li>阿伯丁</li>
+                                        <li>阿布贾</li>
+                                        <li>阿达纳</li>
+                                        <li>阿德莱德</li>
+                                    </ul>
+                                    <div id="M" class="list_title letter_title ">
+                                        <div class="list_title letter_h">L</div>
+                                        <div>M</div>
+                                    </div>
+                                    <ul>
+                                        <li class="border_none">阿比让</li>
+                                        <li>阿伯丁</li>
+                                        <li>阿布贾</li>
+                                        <li>阿达纳</li>
+                                        <li>阿德莱德</li>
+                                    </ul>
+                                    <div id="N" class="list_title letter_title ">
+                                        <div class="list_title letter_h">M</div>
+                                        <div>N</div>
+                                    </div>
+                                    <ul>
+                                        <li class="border_none">阿比让</li>
+                                        <li>阿伯丁</li>
+                                        <li>阿布贾</li>
+                                        <li>阿达纳</li>
+                                        <li>阿德莱德</li>
+                                    </ul>
+                                    <div id="O" class="list_title letter_title ">
+                                        <div class="list_title letter_h">N</div>
+                                        <div>O</div>
+                                    </div>
+                                    <ul>
+                                        <li class="border_none">阿比让</li>
+                                        <li>阿伯丁</li>
+                                        <li>阿布贾</li>
+                                        <li>阿达纳</li>
+                                        <li>阿德莱德</li>
+                                    </ul>
+                                    <div id="P" class="list_title letter_title ">
+                                        <div class="list_title letter_h">O</div>
+                                        <div>P</div>
+                                    </div>
+                                    <ul>
+                                        <li class="border_none">阿比让</li>
+                                        <li>阿伯丁</li>
+                                        <li>阿布贾</li>
+                                        <li>阿达纳</li>
+                                        <li>阿德莱德</li>
+                                    </ul>
+                                    <div id="Q" class="list_title letter_title ">
+                                        <div class="list_title letter_h">P</div>
+                                        <div>Q</div>
+                                    </div>
+                                    <ul>
+                                        <li class="border_none">阿比让</li>
+                                        <li>阿伯丁</li>
+                                        <li>阿布贾</li>
+                                        <li>阿达纳</li>
+                                        <li>阿德莱德</li>
+                                    </ul>
+                                    <div id="R" class="list_title letter_title ">
+                                        <div class="list_title letter_h">Q</div>
+                                        <div>R</div>
+                                    </div>
+                                    <ul>
+                                        <li class="border_none">阿比让</li>
+                                        <li>阿伯丁</li>
+                                        <li>阿布贾</li>
+                                        <li>阿达纳</li>
+                                        <li>阿德莱德</li>
+                                    </ul>
+                                    <div id="S" class="list_title letter_title ">
+                                        <div class="list_title letter_h">R</div>
+                                        <div>S</div>
+                                    </div>
+                                    <ul>
+                                        <li class="border_none">阿比让</li>
+                                        <li>阿伯丁</li>
+                                        <li>阿布贾</li>
+                                        <li>阿达纳</li>
+                                        <li>阿德莱德</li>
+                                    </ul>
+                                    <div id="T" class="list_title letter_title ">
+                                        <div class="list_title letter_h">S</div>
+                                        <div>T</div>
+                                    </div>
+                                    <ul>
+                                        <li class="border_none">阿比让</li>
+                                        <li>阿伯丁</li>
+                                        <li>阿布贾</li>
+                                        <li>阿达纳</li>
+                                        <li>阿德莱德</li>
+                                    </ul>
+                                    <div id="U" class="list_title letter_title ">
+                                        <div class="list_title letter_h">T</div>
+                                        <div>U</div>
+                                    </div>
+                                    <ul>
+                                        <li class="border_none">阿比让</li>
+                                        <li>阿伯丁</li>
+                                        <li>阿布贾</li>
+                                        <li>阿达纳</li>
+                                        <li>阿德莱德</li>
+                                    </ul>
+                                    <div id="V" class="list_title letter_title ">
+                                        <div class="list_title letter_h">U</div>
+                                        <div>V</div>
+                                    </div>
+                                    <ul>
+                                        <li class="border_none">阿比让</li>
+                                        <li>阿伯丁</li>
+                                        <li>阿布贾</li>
+                                        <li>阿达纳</li>
+                                        <li>阿德莱德</li>
+                                    </ul>
+                                    <div id="W" class="list_title letter_title ">
+                                        <div class="list_title letter_h">V</div>
+                                        <div>W</div>
+                                    </div>
+                                    <ul>
+                                        <li class="border_none">阿比让</li>
+                                        <li>阿伯丁</li>
+                                        <li>阿布贾</li>
+                                        <li>阿达纳</li>
+                                        <li>阿德莱德</li>
+                                    </ul>
+                                    <div id="X" class="list_title letter_title ">
+                                        <div class="list_title letter_h">W</div>
+                                        <div>X</div>
+                                    </div>
+                                    <ul>
+                                        <li class="border_none">阿比让</li>
+                                        <li>阿伯丁</li>
+                                        <li>阿布贾</li>
+                                        <li>阿达纳</li>
+                                        <li>阿德莱德</li>
+                                    </ul>
+                                    <div id="Y" class="list_title letter_title ">
+                                        <div class="list_title letter_h">X</div>
+                                        <div>Y</div>
+                                    </div>
+                                    <ul>
+                                        <li class="border_none">阿比让</li>
+                                        <li>阿伯丁</li>
+                                        <li>阿布贾</li>
+                                        <li>阿达纳</li>
+                                        <li>阿德莱德</li>
+                                    </ul>
+                                    <div id="Z" class="list_title letter_title ">
+                                        <div class="list_title letter_h">Y</div>
+                                        <div>Z</div>
+                                    </div>
+                                    <ul>
+                                        <li class="border_none">阿比让</li>
+                                        <li>阿伯丁</li>
+                                        <li>阿布贾</li>
+                                        <li>阿达纳</li>
+                                        <li>阿德莱德</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidebar">
+                        <ul>
+                            <li>A</li>
+                            <li>B</li>
+                            <li>C</li>
+                            <li>D</li>
+                            <li>E</li>
+                            <li>F</li>
+                            <li>G</li>
+                            <li>H</li>
+                            <li>I</li>
+                            <li>J</li>
+                            <li>K</li>
+                            <li>L</li>
+                            <li>M</li>
+                            <li>N</li>
+                            <li>O</li>
+                            <li>P</li>
+                            <li>Q</li>
+                            <li>R</li>
+                            <li>S</li>
+                            <li>T</li>
+                            <li>U</li>
+                            <li>V</li>
+                            <li>W</li>
+                            <li>X</li>
+                            <li>Y</li>
+                            <li>Z</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
