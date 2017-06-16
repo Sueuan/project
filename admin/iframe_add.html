@@ -1,0 +1,2369 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/laydate.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/laydate.dev.js"></script>
+    <script src="js/add.js"></script>
+</head>
+<body>
+<div class="add_page con_main">
+    <div  id="con_part2" class="con_part2 clearfix"   >
+        <div class="bread_icon fl"></div>
+        <ul class="bread clearfix fl">
+            <li>
+                <a href="javascript:"> 我的主页&nbsp;>&nbsp;</a>
+            </li>
+            <li>
+                <a href="javascript:"> 申请单管理&nbsp; >&nbsp;</a>
+            </li>
+            <li>
+                <a href="javascript:"> 申请单</a>
+            </li>
+        </ul>
+    </div>
+    <div id="add_tab" class="add_tab">
+        <ul class="clearfix">
+            <li class="tab_active" >
+                <span title="Course"> Course</span>
+                <span style="display: block" class="cover"></span>
+            </li>
+            <li  title="About You">
+                <span> About You</span>
+                <span  class="cover"></span>
+            </li>
+            <li title="Please select your fee category">
+                <span >Please select your fee category</span>
+                <span   class="cover"></span>
+            </li>
+            <li  title="Address" >
+                <span>Address</span>
+                <span   class="cover"></span>
+            </li>
+            <li title="Educational Representative Details" >
+                <span > Educational Representative Details</span>
+                <span  class="cover"></span>
+            </li>
+            <li title=" Passport and Visa Information" >
+                <span > Passport and Visa Information</span>
+                <span style="display: block" class="cover"></span>
+            </li>
+            <li title="International Student Visas">
+                <span > International Student Visas</span>
+                <span  class="cover"></span>
+            </li>
+            <li title="Qualifications Not Completed">
+                <span >Qualifications Not Completed</span>
+                <span   class="cover"></span>
+            </li>
+            <li  >
+                <span >English Language</span>
+                <span   class="cover"></span>
+            </li>
+            <li  >
+                <span> Work Experience</span>
+                <span  class="cover"></span>
+            </li>
+            <li title="Equal Opportunities" >
+                <span >Equal Opportunities</span>
+                <span class="cover"></span>
+            </li>
+            <li title="Reference" >
+                <span >Reference</span>
+                <span class="cover"></span>
+            </li>
+        </ul>
+        <style>
+            .add_page .add_tab{width: 100%;position: relative;height: 35px;overflow: hidden;margin-left: 30px;padding-left: 0;}
+            .title_next,.title_prev{position: absolute;width: 30px;height: 35px;cursor: pointer;background:#fff  url("images/title_btn.png")}
+            .title_next{right: 0;top: 0;background-position: -38px 8px;}
+            .title_next:hover{background-position:-38px -41px; }
+            .title_prev{left:0px;top: 0;background-position: 9px 10px;}
+            .title_prev:hover{background-position: 9px -40px;}
+            .add_page .add_tab ul{position: absolute;left:0px;width: 2150px;}
+        </style>
+        <div class=''>
+            <div class="title_next"></div>
+            <div class="title_prev"></div>
+        </div>
+    </div>
+    <div class="add_con">
+        <div style="display: block"  class="add_form">
+            <div class="form_top clearfix">
+                <span class="icon"></span>
+                <span>Course</span>
+            </div>
+            <div class="form_list ">
+                <div>
+                    <ul class="clearfix">
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix add_form_20">
+                                <label >Have you previously studied at, or applied to, the University of East Anglia?</label>
+                              <!--  <h2></h2>-->
+                            </div>
+                            <div class="down_list add_form_70 fl" >
+                                <input  value=" Mr"   type="text"/>
+                                <div class="drop_btn"></div>
+                                <div class="list">
+                                    <dl>
+                                        <dt> Mr</dt>
+                                        <dt> Ms</dt>
+                                        <dt> Miss</dt>
+                                        <dt>Mrs</dt>
+                                        <dt> Professor</dt>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix ">
+                                <label >First / Given Name：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Expiry Date：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input class="year_end" placeholder="dd/mm/yyyy" id="J-xl-3" type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >If Postgraduate Research, please indicate the type of method by which you are applying?</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Middle Names：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Gender：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="down_list add_form_70 fl" >
+                                <input  value=" Female"   type="text"/>
+                                <div class="drop_btn"></div>
+                                <div class="list">
+                                    <dl>
+                                        <dt> Female</dt>
+                                        <dt> Male</dt>
+                                        <dt> Other</dt>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Chinese Name：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100 form_birth">
+                            <div class="fl label clearfix">
+                                <label >Date of birth：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="down_list add_form_15 fl" >
+                                <input  value=" 01"   type="text"/>
+                                <div class="drop_btn"></div>
+                                <div class="list">
+                                    <dl>
+                                        <dt> 01</dt>
+                                        <dt> 02</dt>
+                                        <dt> 03</dt>
+                                        <dt>04</dt>
+                                        <dt>05</dt>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="down_list add_form_15 fl" >
+                                <input  value=" 01"   type="text"/>
+                                <div class="drop_btn"></div>
+                                <div class="list">
+                                    <dl>
+                                        <dt>01</dt>
+                                        <dt>02</dt>
+                                        <dt>03</dt>
+                                        <dt>04</dt>
+                                        <dt>05</dt>
+                                        <dt>06</dt>
+                                        <dt>07</dt>
+                                        <dt>08</dt>
+                                        <dt>09</dt>
+                                        <dt>10</dt>
+                                        <dt>11</dt>
+                                        <dt>12</dt>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="down_list add_form_15 fl" >
+                                <input  value=" 2016"   type="text"/>
+                                <div class="drop_btn"></div>
+                                <div class="list">
+                                    <dl>
+                                        <dt> 2016</dt>
+                                        <dt> 2015</dt>
+                                        <dt> 2014</dt>
+                                        <dt>2013</dt>
+                                        <dt> 2012</dt>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <!--新增年月-->
+                        <li class="clearfix add_form_100 form_birth ">
+                            <div class="fl label clearfix">
+                                <label >Date of birth：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="down_list add_form_30 fl two_box1" >
+                                <input  value=" 01"   type="text"/>
+                                <div class="drop_btn"></div>
+                                <div class="list">
+                                    <dl>
+                                        <dt>01</dt>
+                                        <dt>02</dt>
+                                        <dt>03</dt>
+                                        <dt>04</dt>
+                                        <dt>05</dt>
+                                        <dt>06</dt>
+                                        <dt>07</dt>
+                                        <dt>08</dt>
+                                        <dt>09</dt>
+                                        <dt>10</dt>
+                                        <dt>11</dt>
+                                        <dt>12</dt>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="down_list add_form_30 fl two_box2" >
+                                <input  value=" 2016"   type="text"/>
+                                <div class="drop_btn"></div>
+                                <div class="list">
+                                    <dl>
+                                        <dt> 2016</dt>
+                                        <dt> 2015</dt>
+                                        <dt> 2014</dt>
+                                        <dt>2013</dt>
+                                        <dt> 2012</dt>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <!--新增年月-->
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Nationality：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="down_list add_form_70 fl" >
+                                <input  value="  China"   type="text"/>
+                                <div class="drop_btn"></div>
+                                <div class="list">
+                                    <dl>
+                                        <dt>  China</dt>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Permanent residence country：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="down_list add_form_70 fl" >
+                                <input  value="  China"   type="text"/>
+                                <div class="drop_btn"></div>
+                                <div class="list">
+                                    <dl>
+                                        <dt>  China</dt>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Ethnic origin：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="down_list add_form_70 fl" >
+                                <input  value=" Chinese"   type="text"/>
+                                <div class="drop_btn"></div>
+                                <div class="list">
+                                    <dl>
+                                        <dt> Chinese</dt>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Birth country：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="down_list add_form_70 fl" >
+                                <input  value=" China"   type="text"/>
+                                <div class="drop_btn"></div>
+                                <div class="list">
+                                    <dl>
+                                        <dt> China</dt>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Passport number：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Issue Date：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input  placeholder="dd/mm/yyyy" id="J-xl-1"  type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Expiry Date：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input placeholder="dd/mm/yyyy" id="J-xl-2" type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Place of Issue：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Contract number：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="select_box add_form_100 clearfix ">
+                            <div class="fl label clearfix">
+                                <label >Do you have any criminal convictions？</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl clearfix add_form_70 ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon check_box"></span>
+                                    <span class="fl text">Yes</span>
+                                </div>
+                                <div class="clearfix fl">
+                                    <span class="fl icon "></span>
+                                    <span class="fl text ">No </span>
+                                </div>
+                            </div>
+                        </li>
+                        <!--12.26新增多选框-->
+                        <li class=" add_form_100 clearfix check_multiple ">
+                            <div class="fl label clearfix">
+                                <label >Do you have any criminal convictions？</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl clearfix add_form_70 ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon check_box"></span>
+                                    <span class="fl text">11111</span>
+                                </div>
+                                <div class="clearfix fl">
+                                    <span class="fl icon "></span>
+                                    <span class="fl text ">22222 </span>
+                                </div>
+                                <div class="clearfix fl">
+                                    <span class="fl icon "></span>
+                                    <span class="fl text ">33333 </span>
+                                </div>
+                            </div>
+                        </li>
+                        <!--12.26新增多选框-->
+                        <!--12.26新增多选一-->
+                        <li class=" add_form_100 clearfix check_one ">
+                            <div class="fl label clearfix">
+                                <label >Do you have any criminal convictions？</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl clearfix add_form_70 ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon check_box"></span>
+                                    <span class="fl text">11111</span>
+                                </div>
+                                <div class="clearfix fl">
+                                    <span class="fl icon "></span>
+                                    <span class="fl text ">22222 </span>
+                                </div>
+                                <div class="clearfix fl">
+                                    <span class="fl icon "></span>
+                                    <span class="fl text ">33333 </span>
+                                </div>
+                            </div>
+                        </li>
+                        <!--12.26新增多选一-->
+                        <li class="select_box  add_form_100 clearfix ">
+                            <div class="fl label clearfix">
+                                <label >Do you have any disability？</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl clearfix add_form_70 ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon check_box"></span>
+                                    <span class="fl text">Yes</span>
+                                </div>
+                                <div class="clearfix fl">
+                                    <span class="fl icon "></span>
+                                    <span class="fl text ">No </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box  add_form_100 clearfix ">
+                            <div class="fl label clearfix">
+                                <label >Contract type：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl clearfix  add_form_70">
+                                <div class="clearfix fl">
+                                    <span class="fl icon check_box"></span>
+                                    <span class="fl text">全程</span>
+                                </div>
+                                <div class="clearfix fl">
+                                    <span class="fl icon "></span>
+                                    <span class="fl text ">国内合作</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="save_btn clearfix ">
+                    <div class="fr clearfix">
+                        <span class="btn_1">Save</span>
+                        <span class="btn_2">Save & Continue </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div  class="add_form">
+            <div class="form_top clearfix">
+                <span class="icon"></span>
+                <span> About You</span>
+            </div>
+            <div class="form_list ">
+                <div>
+                    <div style="width: 190px;" class="title ">Home Address</div>
+                    <ul class="clearfix">
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Country：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="down_list add_form_70 fl" >
+                                <input  value=" China"   type="text"/>
+                                <div class="drop_btn"></div>
+                                <div class="list">
+                                    <dl>
+                                        <dt> China</dt>
+                                        <dt> UK</dt>
+                                        <dt> USA</dt>
+                                        <dt></dt>
+                                        <dt> Australia</dt>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >County：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >City：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >E-mail：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Telephone Number：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Mobile Number：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Adress Line 1：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Adress Line 2：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Adress Line 3：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >International Postal Code：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                    </ul>
+                    <div style="width: 190px;" class="title ">JJL Address</div>
+                    <ul class="clearfix">
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Country：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="down_list add_form_70 fl" >
+                                <input  value=" China"   type="text"/>
+                                <div class="drop_btn"></div>
+                                <div class="list">
+                                    <dl>
+                                        <dt> China</dt>
+                                        <dt> UK</dt>
+                                        <dt> USA</dt>
+                                        <dt></dt>
+                                        <dt> Australia</dt>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >County：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >City：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >E-mail：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Telephone Number：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Mobile Number：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Adress Line 1：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Adress Line 2：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Adress Line 3：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >International Postal Code：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="save_btn clearfix">
+                    <div class="fr clearfix">
+                        <span class="btn_1">Save</span>
+                        <span class="btn_2">Save & Continue </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div  class="add_form">
+            <div class="form_top clearfix">
+                <span class="icon"></span>
+                <span>Please select your fee category</span>
+            </div>
+            <div class="form_list ">
+                <div>
+                    <div class="title title_l ">
+                        RECOMMENDED INFORMATION 1</div>
+                    <ul class="clearfix">
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Title：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="down_list add_form_70 fl" >
+                                <input  value=" Mr"   type="text"/>
+                                <div class="drop_btn"></div>
+                                <div class="list">
+                                    <dl>
+                                        <dt> Mr</dt>
+                                        <dt> Ms</dt>
+                                        <dt> Miss</dt>
+                                        <dt>Mrs</dt>
+                                        <dt> Professor</dt>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Family Name：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >First Name：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Country：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="down_list add_form_70 fl" >
+                                <input  value=" China"   type="text"/>
+                                <div class="drop_btn"></div>
+                                <div class="list">
+                                    <dl>
+                                        <dt> China</dt>
+                                        <dt> UK</dt>
+                                        <dt> USA</dt>
+                                        <dt></dt>
+                                        <dt> Australia</dt>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >County：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >City：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Telephone Number：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >E-mail：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Post Code：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Reference Type：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="down_list add_form_70 fl" >
+                                <input  value=" Upload"   type="text"/>
+                                <div class="drop_btn"></div>
+                                <div class="list">
+                                    <dl>
+                                        <dt> Upload</dt>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Organization：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Position：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Relationship to you ：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input placeholder="Teacher"  type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Adress Line 1：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Adress Line 2：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Adress Line 3：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="select_box add_form_100 clearfix file_main ">
+                            <div class="fl label clearfix">
+                                <label>Please Upload The Recommend material</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_100 file_box">
+                                <input class="add_form_100 box" placeholder="未选择文件"  type="text"/>
+                                <div class="add_form_10 file_btn fr" >
+                                    浏览
+                                    <input type="file"/>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="title title_l ">RECOMMENDED INFORMATION 2</div>
+                    <ul class="clearfix">
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Title：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="down_list add_form_70 fl" >
+                                <input  value=" Mr"   type="text"/>
+                                <div class="drop_btn"></div>
+                                <div class="list">
+                                    <dl>
+                                        <dt> Mr</dt>
+                                        <dt> Ms</dt>
+                                        <dt> Miss</dt>
+                                        <dt>Mrs</dt>
+                                        <dt> Professor</dt>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Family Name：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >First Name：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Country：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="down_list add_form_70 fl" >
+                                <input  value=" China"   type="text"/>
+                                <div class="drop_btn"></div>
+                                <div class="list">
+                                    <dl>
+                                        <dt> China</dt>
+                                        <dt> UK</dt>
+                                        <dt> USA</dt>
+                                        <dt></dt>
+                                        <dt> Australia</dt>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >County：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >City：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Telephone Number：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >E-mail：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Post Code：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Reference Type：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="down_list add_form_70 fl" >
+                                <input  value=" Upload"   type="text"/>
+                                <div class="drop_btn"></div>
+                                <div class="list">
+                                    <dl>
+                                        <dt> Upload</dt>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Organization：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Position：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Relationship to you ：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input placeholder="Teacher"  type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Adress Line 1：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Adress Line 2：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Adress Line 3：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="select_box add_form_100 clearfix file_main ">
+                            <div class="fl label clearfix">
+                                <label>Please Upload The Recommend material</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_100 file_box">
+                                <input class="add_form_100 box" placeholder="未选择文件"  type="text"/>
+                                <div class="add_form_10 file_btn fr" >
+                                    浏览
+                                    <input type="file"/>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="save_btn clearfix">
+                    <div class="fr clearfix">
+                        <span class="btn_1">Save</span>
+                        <span class="btn_2">Save & Continue </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="add_form">
+            <div class="form_top clearfix">
+                <span class="icon"></span>
+                <span>Address</span>
+            </div>
+            <div class="form_list ">
+                <div>
+                    <div class="title title_l ">EDUCATION EXPERIENCE1</div>
+                    <div class="title2 ">From the highest degree</div>
+                    <ul class="clearfix">
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Name of University ：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input  type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Approximate Start Date：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input  placeholder="dd/mm/yyyy"  id="J-xl-4"  type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Approximate End Date：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input  placeholder="dd/mm/yyyy" id="J-xl-5"  type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Qualification：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input  type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Subject：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Country：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="down_list add_form_70 fl" >
+                                <input  value=" China"   type="text"/>
+                                <div class="drop_btn"></div>
+                                <div class="list">
+                                    <dl>
+                                        <dt> China</dt>
+                                        <dt> UK</dt>
+                                        <dt> USA</dt>
+                                        <dt></dt>
+                                        <dt> Australia</dt>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box add_form_100 clearfix file_main ">
+                            <div class="fl label clearfix">
+                                <label>Please Upload your degree certificate</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_100 file_box">
+                                <input class="add_form_100 box" placeholder="未选择文件"  type="text"/>
+                                <div class="add_form_10 file_btn fr" >
+                                    浏览
+                                    <input type="file"/>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box add_form_100 clearfix file_main ">
+                            <div class="fl label clearfix">
+                                <label>Please Upload transcript</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_100 file_box">
+                                <input class="add_form_100 box" placeholder="未选择文件"  type="text"/>
+                                <div class="add_form_10 file_btn fr" >
+                                    浏览
+                                    <input type="file"/>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="title title_l ">EDUCATION EXPERIENCE2</div>
+                    <ul class="clearfix">
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Name of University ：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input  type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Approximate Start Date：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input  placeholder="dd/mm/yyyy"  type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Approximate End Date：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input  placeholder="dd/mm/yyyy"  type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Qualification：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input  type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Subject：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Country：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="down_list add_form_70 fl" >
+                                <input  value=" China"   type="text"/>
+                                <div class="drop_btn"></div>
+                                <div class="list">
+                                    <dl>
+                                        <dt> China</dt>
+                                        <dt> UK</dt>
+                                        <dt> USA</dt>
+                                        <dt></dt>
+                                        <dt> Australia</dt>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box add_form_100 clearfix file_main ">
+                            <div class="fl label clearfix">
+                                <label>Please Upload your degree certificate</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_100 file_box">
+                                <input class="add_form_100 box" placeholder="未选择文件"  type="text"/>
+                                <div class="add_form_10 file_btn fr" >
+                                    浏览
+                                    <input type="file"/>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box add_form_100 clearfix file_main ">
+                            <div class="fl label clearfix">
+                                <label>Please Upload transcript</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_100 file_box">
+                                <input class="add_form_100 box" placeholder="未选择文件"  type="text"/>
+                                <div class="add_form_10 file_btn fr" >
+                                    浏览
+                                    <input type="file"/>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="title title_l">EDUCATION EXPERIENCE3</div>
+                    <ul class="clearfix">
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Name of University ：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input  type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Approximate Start Date：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input  placeholder="dd/mm/yyyy"  type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Approximate End Date：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input  placeholder="dd/mm/yyyy"  type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Qualification：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input  type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Subject：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Country：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="down_list add_form_70 fl" >
+                                <input  value=" China"   type="text"/>
+                                <div class="drop_btn"></div>
+                                <div class="list">
+                                    <dl>
+                                        <dt> China</dt>
+                                        <dt> UK</dt>
+                                        <dt> USA</dt>
+                                        <dt></dt>
+                                        <dt> Australia</dt>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box add_form_100 clearfix file_main ">
+                            <div class="fl label clearfix">
+                                <label>Please Upload your degree certificate</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_100 file_box">
+                                <input class="add_form_100 box" placeholder="未选择文件"  type="text"/>
+                                <div class="add_form_10 file_btn fr" >
+                                    浏览
+                                    <input type="file"/>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box add_form_100 clearfix file_main ">
+                            <div class="fl label clearfix">
+                                <label>Please Upload transcript</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_100 file_box">
+                                <input class="add_form_100 box" placeholder="未选择文件"  type="text"/>
+                                <div class="add_form_10 file_btn fr" >
+                                    浏览
+                                    <input type="file"/>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="title title_l ">EDUCATION EXPERIENCE4</div>
+                    <ul class="clearfix">
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Name of University ：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input  type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Approximate Start Date：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input  placeholder="dd/mm/yyyy"  type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Approximate End Date：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input  placeholder="dd/mm/yyyy"  type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Qualification：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input  type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Subject：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Country：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="down_list add_form_70 fl" >
+                                <input  value=" China"   type="text"/>
+                                <div class="drop_btn"></div>
+                                <div class="list">
+                                    <dl>
+                                        <dt> China</dt>
+                                        <dt> UK</dt>
+                                        <dt> USA</dt>
+                                        <dt></dt>
+                                        <dt> Australia</dt>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box add_form_100 clearfix file_main ">
+                            <div class="fl label clearfix">
+                                <label>Please Upload your degree certificate</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_100 file_box">
+                                <input class="add_form_100 box" placeholder="未选择文件"  type="text"/>
+                                <div class="add_form_10 file_btn fr" >
+                                    浏览
+                                    <input type="file"/>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box add_form_100 clearfix file_main ">
+                            <div class="fl label clearfix">
+                                <label>Please Upload transcript</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_100 file_box">
+                                <input class="add_form_100 box" placeholder="未选择文件"  type="text"/>
+                                <div class="add_form_10 file_btn fr" >
+                                    浏览
+                                    <input type="file"/>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box add_form_100 clearfix file_main ">
+                            <div class="fl label clearfix">
+                                <label>Please Upload additional document</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_100 file_box">
+                                <input class="add_form_100 box" placeholder="未选择文件"  type="text"/>
+                                <div class="add_form_10 file_btn fr" >
+                                    浏览
+                                    <input type="file"/>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="title title_l ">ENGLISH LANGUAGE</div>
+                    <ul class="clearfix">
+                        <li class="select_box add_form_100 clearfix ">
+                            <div style="" class="fl label clearfix">
+                                <label >Was your first degree instructed and examined in English？</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl clearfix add_form_60 ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon check_box"></span>
+                                    <span class="fl text">Yes</span>
+                                </div>
+                                <div class="clearfix fl">
+                                    <span class="fl icon "></span>
+                                    <span class="fl text ">No </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Test Name：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="down_list add_form_70 fl" >
+                                <input  value=" Test taken-IELTS"   type="text"/>
+                                <div class="drop_btn"></div>
+                                <div class="list">
+                                    <dl>
+                                        <dt> Test taken-IELTS</dt>
+                                        <dt> Test taken-TOEFL</dt>
+                                        <dt> Test taken-Other</dt>
+                                        <dt>Test not yet taken</dt>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Date Taken：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input  placeholder="dd/mm/yyyy"  type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Overall Score：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Band Score - Listening：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Band Score - Reading：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Band Score - Speaking：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Band Score - Writing：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Centre Number：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Candidate Number：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >TRF Number：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="select_box add_form_100 clearfix file_main ">
+                            <div class="fl label clearfix">
+                                <label>Please upload your test certificate</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_100 file_box">
+                                <input class="add_form_100 box" placeholder="未选择文件"  type="text"/>
+                                <div class="add_form_10 file_btn fr" >
+                                    浏览
+                                    <input type="file"/>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="save_btn clearfix">
+                    <div class="fr clearfix">
+                        <span class="btn_1">Save</span>
+                        <span class="btn_2">Save & Continue </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div  class="add_form">
+            <div class="form_top clearfix">
+                <span class="icon"></span>
+                <span> Educational Representative Details</span>
+            </div>
+            <div class="form_list ">
+                <div>
+                    <div class="title ">WORK EXPERIENCE 1</div>
+                    <div class="title2 ">Starting from the recent experience</div>
+                    <ul class="clearfix">
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Name of Employer：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input  type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Country：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="down_list add_form_70 fl" >
+                                <input  value=" China"   type="text"/>
+                                <div class="drop_btn"></div>
+                                <div class="list">
+                                    <dl>
+                                        <dt> China</dt>
+                                        <dt> UK</dt>
+                                        <dt> USA</dt>
+                                        <dt></dt>
+                                        <dt> Australia</dt>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Address：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Position：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Nature of Work：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Start Date：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input placeholder="dd/mm/yyyy"   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >End Date：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input placeholder="dd/mm/yyyy"  type="text"/>
+                            </div>
+                        </li>
+                        <li class="select_box add_form_100 clearfix file_main ">
+                            <div class="fl label clearfix">
+                                <label>Upload work material</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_100 file_box">
+                                <input class="add_form_100 box" placeholder="未选择文件"  type="text"/>
+                                <div class="add_form_10 file_btn fr" >
+                                    浏览
+                                    <input type="file"/>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="title ">WORK EXPERIENCE 2</div>
+                    <ul class="clearfix">
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Name of Employer：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input  type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Country：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="down_list add_form_70 fl" >
+                                <input  value=" China"   type="text"/>
+                                <div class="drop_btn"></div>
+                                <div class="list">
+                                    <dl>
+                                        <dt> China</dt>
+                                        <dt> UK</dt>
+                                        <dt> USA</dt>
+                                        <dt></dt>
+                                        <dt> Australia</dt>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Address：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Position：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Nature of Work：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Start Date：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input placeholder="dd/mm/yyyy"   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >End Date：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input placeholder="dd/mm/yyyy"  type="text"/>
+                            </div>
+                        </li>
+                        <li class="select_box add_form_100 clearfix file_main ">
+                            <div class="fl label clearfix">
+                                <label>Upload work material</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_100 file_box">
+                                <input class="add_form_100 box" placeholder="未选择文件"  type="text"/>
+                                <div class="add_form_10 file_btn fr" >
+                                    浏览
+                                    <input type="file"/>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="title ">WORK EXPERIENCE 3</div>
+                    <ul class="clearfix">
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Name of Employer：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input  type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Country：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="down_list add_form_70 fl" >
+                                <input  value=" China"   type="text"/>
+                                <div class="drop_btn"></div>
+                                <div class="list">
+                                    <dl>
+                                        <dt> China</dt>
+                                        <dt> UK</dt>
+                                        <dt> USA</dt>
+                                        <dt></dt>
+                                        <dt> Australia</dt>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Address：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Position：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Nature of Work：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Start Date：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input placeholder="dd/mm/yyyy"   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >End Date：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input placeholder="dd/mm/yyyy"  type="text"/>
+                            </div>
+                        </li>
+                        <li class="select_box add_form_100 clearfix file_main ">
+                            <div class="fl label clearfix">
+                                <label>Upload work material</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_100 file_box">
+                                <input class="add_form_100 box" placeholder="未选择文件"  type="text"/>
+                                <div class="add_form_10 file_btn fr" >
+                                    浏览
+                                    <input type="file"/>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="title ">WORK EXPERIENCE 4</div>
+                    <ul class="clearfix">
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Name of Employer：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input  type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Country：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="down_list add_form_70 fl" >
+                                <input  value=" China"   type="text"/>
+                                <div class="drop_btn"></div>
+                                <div class="list">
+                                    <dl>
+                                        <dt> China</dt>
+                                        <dt> UK</dt>
+                                        <dt> USA</dt>
+                                        <dt></dt>
+                                        <dt> Australia</dt>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Address：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Position：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Nature of Work：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >Start Date：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input placeholder="dd/mm/yyyy"   type="text"/>
+                            </div>
+                        </li>
+                        <li class="clearfix add_form_100">
+                            <div class="fl label clearfix">
+                                <label >End Date：</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_70">
+                                <input placeholder="dd/mm/yyyy"  type="text"/>
+                            </div>
+                        </li>
+                        <li class="select_box add_form_100 clearfix file_main ">
+                            <div class="fl label clearfix">
+                                <label>Upload work material</label>
+                                <h2>*</h2>
+                            </div>
+                            <div class="fl add_form_100 file_box">
+                                <input class="add_form_100 box" placeholder="未选择文件"  type="text"/>
+                                <div class="add_form_10 file_btn fr" >
+                                    浏览
+                                    <input type="file"/>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="save_btn clearfix">
+                    <div class="fr clearfix">
+                        <span class="btn_1">Save</span>
+                        <span class="btn_2">Save & Continue </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div   class="add_form">
+            <div class="form_top clearfix">
+                <span class="icon"></span>
+                <span> Passport and Visa Information</span>
+            </div>
+            <div class="form_list check_more " id="add_scholl">
+                <div style="/*width: 1200px;margin: 0 auto;*/">
+                    <div class="title title3 ">Postgraduate Taught and Postgraduate Research Fee Status Categories:</div>
+                    <ul class="clearfix">
+                        <li class="select_box   clearfix ">
+                            <div class="fl label clearfix">
+                                <label>You are a UK national and have lived in the UK for the last three years and not just for full-time education：</label>
+                            </div>
+                            <div  class="fl clearfix check_box_more ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon check_box"></span>
+                                    <span class="fl text">You have been granted Refugee or Humanitarian Protection status by the UK government and have lived in the UK since the status was granted or you are such a persons spouse/civil partner/dependent </span>
+                                </div>
+                                <div class="clearfix fl">
+                                    <span class="fl icon check_box"></span>
+                                    <span class="fl text">You have been granted Refugee or Humanitarian Protection status by the UK government and have lived in the UK since the status was granted or you are such a persons spouse/civil partner/dependent </span>
+                                </div>
+                                <div class="clearfix fl">
+                                    <span class="fl icon check_box"></span>
+                                    <span class="fl text">You have been granted Refugee or Humanitarian Protection status by the UK government and have lived in the UK since the status was granted or you are such a persons spouse/civil partner/dependent </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box  clearfix ">
+                            <div class="fl clearfix ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon  check_dis"></span>
+                                    <span class="fl text "> King’s College London University  </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box  clearfix ">
+                            <div class="fl clearfix ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon "></span>
+                                    <span class="fl text "> Edinburgh University    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box   clearfix ">
+                            <div class="fl clearfix ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon "></span>
+                                    <span class="fl text ">Manchester University   </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box   clearfix ">
+                            <div class="fl clearfix ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon "></span>
+                                    <span class="fl text ">University College London  </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box   clearfix ">
+                            <div class="fl clearfix ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon "></span>
+                                    <span class="fl text ">Newcastle University </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box   clearfix ">
+                            <div class="fl clearfix ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon "></span>
+                                    <span class="fl text ">Bristol University   </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box   clearfix ">
+                            <div class="fl clearfix ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon "></span>
+                                    <span class="fl text "> Glasgow University  </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box   clearfix ">
+                            <div class="fl clearfix ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon "></span>
+                                    <span class="fl text "> Bath University   </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box   clearfix ">
+                            <div class="fl clearfix ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon "></span>
+                                    <span class="fl text ">Southampton University </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box   clearfix ">
+                            <div class="fl clearfix ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon "></span>
+                                    <span class="fl text ">  University of Birmingham   </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box   clearfix ">
+                            <div class="fl clearfix ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon "></span>
+                                    <span class="fl text ">Cardiff University   </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box   clearfix ">
+                            <div class="fl clearfix ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon "></span>
+                                    <span class="fl text ">  Lancaster University   </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box   clearfix ">
+                            <div class="fl clearfix ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon "></span>
+                                    <span class="fl text ">University of Surrey  </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box   clearfix ">
+                            <div class="fl clearfix ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon "></span>
+                                    <span class="fl text ">University of York  </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box   clearfix ">
+                            <div class="fl clearfix ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon "></span>
+                                    <span class="fl text "> Queen Mary University of London     </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box   clearfix ">
+                            <div class="fl clearfix ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon "></span>
+                                    <span class="fl text ">Roehampton University </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box   clearfix ">
+                            <div class="fl clearfix ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon "></span>
+                                    <span class="fl text ">University of East Anglia</span>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <div class="title title3 ">AUS</div>
+                    <ul class="clearfix">
+                        <li class="select_box   clearfix ">
+                            <div class="fl clearfix ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon check_box"></span>
+                                    <span class="fl text">  The University of Adelaide   </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box   clearfix ">
+                            <div class="fl clearfix ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon "></span>
+                                    <span class="fl text "> The Australian National University    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box   clearfix ">
+                            <div class="fl clearfix ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon "></span>
+                                    <span class="fl text "> The University of Queensland   </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box   clearfix ">
+                            <div class="fl clearfix ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon "></span>
+                                    <span class="fl text ">The University of Melbourne      </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box   clearfix ">
+                            <div class="fl clearfix ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon "></span>
+                                    <span class="fl text "> The University of Western Australia  </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box   clearfix ">
+                            <div class="fl clearfix ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon "></span>
+                                    <span class="fl text ">The University of Sydney  </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box   clearfix ">
+                            <div class="fl clearfix ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon "></span>
+                                    <span class="fl text "> The University of New South Wales      </span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="title title3 ">NZL</div>
+                    <ul class="clearfix">
+                        <li class="select_box   clearfix ">
+                            <div class="fl clearfix ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon check_box"></span>
+                                    <span class="fl text">    University of Otago     </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box   clearfix ">
+                            <div class="fl clearfix ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon "></span>
+                                    <span class="fl text ">   University of Lincoln    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box   clearfix ">
+                            <div class="fl clearfix ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon "></span>
+                                    <span class="fl text ">  The University of Auckland  </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box   clearfix ">
+                            <div class="fl clearfix ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon "></span>
+                                    <span class="fl text ">Auckland University of Technology         </span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="title title3 ">CAN</div>
+                    <ul class="clearfix">
+                        <li class="select_box   clearfix ">
+                            <div class="fl clearfix ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon check_box"></span>
+                                    <span class="fl text">   University of Alberta     </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box   clearfix ">
+                            <div class="fl clearfix ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon "></span>
+                                    <span class="fl text "> Concordia University   </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box   clearfix ">
+                            <div class="fl clearfix ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon "></span>
+                                    <span class="fl text "> Brock University    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box   clearfix ">
+                            <div class="fl clearfix ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon "></span>
+                                    <span class="fl text "> Carleton University     </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box   clearfix ">
+                            <div class="fl clearfix ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon "></span>
+                                    <span class="fl text "> University of Windsor  </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box   clearfix ">
+                            <div class="fl clearfix ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon "></span>
+                                    <span class="fl text ">University of Ottawa   </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="select_box   clearfix ">
+                            <div class="fl clearfix ">
+                                <div class="clearfix fl">
+                                    <span class="fl icon "></span>
+                                    <span class="fl text "> University of Western Ontario     </span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="save_btn clearfix">
+                    <div class="fr clearfix ">
+
+                        <span class="btn_1">Save</span>
+                        <span class="btn_2">Save & Continue </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    /*默认2016-12-23*/
+    laydate({
+        elem: '#J-xl-1',
+        format: 'YYYY-MM-DD',
+        isclear: false,
+        choose: function(datas){
+            $('#J-xl-1').val(datas)
+        }
+    });
+    /*月日年*/
+    laydate({
+        elem: '#J-xl-2',
+        isclear: false,
+        istoday: true,
+        issure: true,
+        choose: function(datas){
+            var str=datas;
+            var str_y=str.substring(0,4);//截取年
+            var str_m=str.substring(5,7);//截取月
+            var str_d=str.substring(8,10);//截取日
+            $('#J-xl-2').val(str_m+'-'+str_d+'-'+str_y);
+        }
+    });
+    /*月日*/
+    laydate({
+        elem: '#J-xl-3',
+        isclear: false,
+        choose: function(datas){
+            var str=datas;
+            var str_y=str.substring(0,4);//截取年
+            var str_m=str.substring(5,7);//截取月
+            var str_d=str.substring(8,10);//截取日
+            $('#J-xl-3').val(str_m+'-'+str_d);
+        }
+    });
+</script>
+</body>
+</html>

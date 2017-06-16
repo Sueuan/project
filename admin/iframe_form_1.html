@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body>
+<div class="con_main clearfix">
+    <div class="top_scroll">
+        <div class="con_part2 clearfix">
+            <div class="bread_icon fl"></div>
+            <ul class="bread clearfix fl">
+                <li>
+                    <a href="javascript:"> 我的主页&nbsp;>&nbsp;</a>
+                </li>
+                <li>
+                    <a href="javascript:"> 客户管理&nbsp; >&nbsp;</a>
+                </li>
+                <li>
+                    <a href="javascript:"> 我的学生</a>
+                </li>
+            </ul>
+        </div>
+        <div class="con_add">新增</div>
+        <div class="con_search clearfix">
+            <ul class="search_list fl clearfix">
+                <li class="clearfix">
+                    <label>学生中文姓名：</label>
+                    <input type="text"/>
+                </li>
+                <li class="clearfix">
+                    <label>学生英文姓名：</label>
+                    <input type="text"/>
+                </li>
+                <li class="clearfix">
+                    <label>合同类型：</label>
+                    <input type="text"/>
+                </li>
+                <li class="clearfix">
+                    <label>学生中文姓名：</label>
+                    <input type="text"/>
+                </li>
+                <li class="clearfix">
+                    <label>学生英文姓名：</label>
+                    <input type="text"/>
+                </li>
+                <li class="clearfix">
+                    <label>合同类型：</label>
+                    <input type="text"/>
+                </li>
+            </ul>
+            <ul class="search_btn fl clearfix">
+                <li class="btn_1">查询</li>
+                <li class="btn_2">操作</li>
+            </ul>
+        </div>
+        <style>
+            .con_main .con_search.two_row_search .search_list{width: 85%;}
+            .con_main .con_search.two_row_search .search_list li{width: 33.3%;}
+            .con_main .con_search.two_row_search .search_btn li{float: right;margin: 5px 0 0 0}
+            .con_main .con_search.two_row_search .search_btn{width: 15%;}
+            .con_main .con_search.two_row_search .search_btn li.btn_1{margin:5px 10px 0 0;}
+            .con_main .con_search .search_btn li{float: right;width: 45%;}
+            .con_main .con_search .search_btn li.btn_2{clear: right;}
+        </style>
+        <div class="con_search clearfix  two_row_search">
+            <ul class="search_list fl clearfix ">
+                <li class="clearfix">
+                    <label>学生中文姓名：</label>
+                    <input type="text"/>
+                </li>
+                <li class="clearfix">
+                    <label>学生英文姓名：</label>
+                    <input type="text"/>
+                </li>
+                <li class="clearfix">
+                    <label>合同类型：</label>
+                    <input type="text"/>
+                </li>
+            </ul>
+            <ul class="search_btn fl clearfix">
+                <li class="btn_2">操作</li>
+                <li class="btn_1">查询</li>
+            </ul>
+        </div>
+        <div class="con_page">
+            <div class="page_main clearfix">
+                <div class="page_left fl">
+                    共<span>14</span>页
+                </div>
+                <div class="page_right fr">
+                    <div class="page_prev fl">上一页</div>
+                    <ul  class="page_num fl">
+                        <li class="page_active"><a href="javascript:">1</a></li>
+                        <li><a href="javascript:">2</a></li>
+                        <li><a href="javascript:">3</a></li>
+                        <li><a href="javascript:">4</a></li>
+                        <li><a href="javascript:">5</a></li>
+                    </ul>
+                    <div class="page_next fl">下一页</div>
+                    <div class="search fl clearfix">
+                        <input class="fl" type="text"/>
+                        <div class="search_btn fr">go</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="con_form">
+        <table>
+            <thead>
+                <tr>
+                    <th>学生中文姓名</th>
+                    <th>学生英文姓名</th>
+                    <th>合同类型</th>
+                    <th>合同号</th>
+                    <th>添加时间</th>
+                    <th>添加时间</th>
+                    <th>发布人</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>关云长</td>
+                    <td>Guan-Yunchang</td>
+                    <td>全程</td>
+                    <td>TERW000000000000008</td>
+                    <td>待完善</td>
+                    <td>2016-11-22 16：01：20</td>
+                    <td>刘鹏</td>
+                    <td >
+                        <div class="clearfix operation">
+                            <div class="fl clearfix  down_btn" >
+                                <span class="icon icon4"></span>
+                                <span>下载</span>
+                            </div>
+                            <div class="fl clearfix  edit_btn" >
+                                <span class="icon icon2"></span>
+                                <span>编辑</span>
+                            </div>
+                            <div class="fl clearfix delete_btn" >
+                                <span class="icon icon3"></span>
+                                <span>删除</span>
+                            </div>
+                        </div>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>关云长</td>
+                    <td>Guan-Yunchang</td>
+                    <td>全程</td>
+                    <td>TERW000000000000008</td>
+                    <td>待完善</td>
+                    <td>2016-11-22 16：01：20</td>
+                    <td>刘鹏</td>
+                    <td >
+                        <div class="clearfix operation">
+                            <div class="fl clearfix  down_btn" >
+                                <span class="icon icon4"></span>
+                                <span>下载</span>
+                            </div>
+                            <div class="fl clearfix  edit_btn" >
+                                <span class="icon icon2"></span>
+                                <span>编辑</span>
+                            </div>
+                            <div class="fl clearfix delete_btn" >
+                                <span class="icon icon3"></span>
+                                <span>删除</span>
+                            </div>
+                        </div>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>关云长</td>
+                    <td>Guan-Yunchang</td>
+                    <td>全程</td>
+                    <td>TERW000000000000008</td>
+                    <td>待完善</td>
+                    <td>2016-11-22 16：01：20</td>
+                    <td>刘鹏</td>
+                    <td >
+                        <div class="clearfix operation">
+                            <div class="fl clearfix  down_btn" >
+                                <span class="icon icon4"></span>
+                                <span>下载</span>
+                            </div>
+                            <div class="fl clearfix  edit_btn" >
+                                <span class="icon icon2"></span>
+                                <span>编辑</span>
+                            </div>
+                            <div class="fl clearfix delete_btn" >
+                                <span class="icon icon3"></span>
+                                <span>删除</span>
+                            </div>
+                        </div>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>关云长</td>
+                    <td>Guan-Yunchang</td>
+                    <td>全程</td>
+                    <td>TERW000000000000008</td>
+                    <td>待完善</td>
+                    <td>2016-11-22 16：01：20</td>
+                    <td>刘鹏</td>
+                    <td >
+                        <div class="clearfix operation">
+                            <div class="fl clearfix  down_btn" >
+                                <span class="icon icon4"></span>
+                                <span>下载</span>
+                            </div>
+                            <div class="fl clearfix  edit_btn" >
+                                <span class="icon icon2"></span>
+                                <span>编辑</span>
+                            </div>
+                            <div class="fl clearfix delete_btn" >
+                                <span class="icon icon3"></span>
+                                <span>删除</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>关云长</td>
+                    <td>Guan-Yunchang</td>
+                    <td>全程</td>
+                    <td>TERW000000000000008</td>
+                    <td>待完善</td>
+                    <td>2016-11-22 16：01：20</td>
+                    <td>刘鹏</td>
+                    <td >
+                        <div class="clearfix operation">
+                            <div class="fl clearfix  down_btn" >
+                                <span class="icon icon4"></span>
+                                <span>下载</span>
+                            </div>
+                            <div class="fl clearfix  edit_btn" >
+                                <span class="icon icon2"></span>
+                                <span>编辑</span>
+                            </div>
+                            <div class="fl clearfix delete_btn" >
+                                <span class="icon icon3"></span>
+                                <span>删除</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>关云长</td>
+                    <td>Guan-Yunchang</td>
+                    <td>全程</td>
+                    <td>TERW000000000000008</td>
+                    <td>待完善</td>
+                    <td>2016-11-22 16：01：20</td>
+                    <td>刘鹏</td>
+                    <td >
+                        <div class="clearfix operation">
+                            <div class="fl clearfix  down_btn" >
+                                <span class="icon icon4"></span>
+                                <span>下载</span>
+                            </div>
+                            <div class="fl clearfix  edit_btn" >
+                                <span class="icon icon2"></span>
+                                <span>编辑</span>
+                            </div>
+                            <div class="fl clearfix delete_btn" >
+                                <span class="icon icon3"></span>
+                                <span>删除</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>关云长</td>
+                    <td>Guan-Yunchang</td>
+                    <td>全程</td>
+                    <td>TERW000000000000008</td>
+                    <td>待完善</td>
+                    <td>2016-11-22 16：01：20</td>
+                    <td>刘鹏</td>
+                    <td >
+                        <div class="clearfix operation">
+                            <div class="fl clearfix  down_btn" >
+                                <span class="icon icon4"></span>
+                                <span>下载</span>
+                            </div>
+                            <div class="fl clearfix  edit_btn" >
+                                <span class="icon icon2"></span>
+                                <span>编辑</span>
+                            </div>
+                            <div class="fl clearfix delete_btn" >
+                                <span class="icon icon3"></span>
+                                <span>删除</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>关云长</td>
+                    <td>Guan-Yunchang</td>
+                    <td>全程</td>
+                    <td>TERW000000000000008</td>
+                    <td>待完善</td>
+                    <td>2016-11-22 16：01：20</td>
+                    <td>刘鹏</td>
+                    <td >
+                        <div class="clearfix operation">
+                            <div class="fl clearfix  down_btn" >
+                                <span class="icon icon4"></span>
+                                <span>下载</span>
+                            </div>
+                            <div class="fl clearfix  edit_btn" >
+                                <span class="icon icon2"></span>
+                                <span>编辑</span>
+                            </div>
+                            <div class="fl clearfix delete_btn" >
+                                <span class="icon icon3"></span>
+                                <span>删除</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>关云长</td>
+                    <td>Guan-Yunchang</td>
+                    <td>全程</td>
+                    <td>TERW000000000000008</td>
+                    <td>待完善</td>
+                    <td>2016-11-22 16：01：20</td>
+                    <td>刘鹏</td>
+                    <td >
+                        <div class="clearfix operation">
+                            <div class="fl clearfix  down_btn" >
+                                <span class="icon icon4"></span>
+                                <span>下载</span>
+                            </div>
+                            <div class="fl clearfix  edit_btn" >
+                                <span class="icon icon2"></span>
+                                <span>编辑</span>
+                            </div>
+                            <div class="fl clearfix delete_btn" >
+                                <span class="icon icon3"></span>
+                                <span>删除</span>
+                            </div>
+                        </div>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>关云长</td>
+                    <td>Guan-Yunchang</td>
+                    <td>全程</td>
+                    <td>TERW000000000000008</td>
+                    <td>待完善</td>
+                    <td>2016-11-22 16：01：20</td>
+                    <td>刘鹏</td>
+                    <td >
+                        <div class="clearfix operation">
+                            <div class="fl clearfix  down_btn" >
+                                <span class="icon icon4"></span>
+                                <span>下载</span>
+                            </div>
+                            <div class="fl clearfix  edit_btn" >
+                                <span class="icon icon2"></span>
+                                <span>编辑</span>
+                            </div>
+                            <div class="fl clearfix delete_btn" >
+                                <span class="icon icon3"></span>
+                                <span>删除</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>关云长</td>
+                    <td>Guan-Yunchang</td>
+                    <td>全程</td>
+                    <td>TERW000000000000008</td>
+                    <td>待完善</td>
+                    <td>2016-11-22 16：01：20</td>
+                    <td>刘鹏</td>
+                    <td >
+                        <div class="clearfix operation">
+                            <div class="fl clearfix  down_btn" >
+                                <span class="icon icon4"></span>
+                                <span>下载</span>
+                            </div>
+                            <div class="fl clearfix  edit_btn" >
+                                <span class="icon icon2"></span>
+                                <span>编辑</span>
+                            </div>
+                            <div class="fl clearfix delete_btn" >
+                                <span class="icon icon3"></span>
+                                <span>删除</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>关云长</td>
+                    <td>Guan-Yunchang</td>
+                    <td>全程</td>
+                    <td>TERW000000000000008</td>
+                    <td>待完善</td>
+                    <td>2016-11-22 16：01：20</td>
+                    <td>刘鹏</td>
+                    <td >
+                        <div class="clearfix operation">
+                            <div class="fl clearfix  down_btn" >
+                                <span class="icon icon4"></span>
+                                <span>下载</span>
+                            </div>
+                            <div class="fl clearfix  edit_btn" >
+                                <span class="icon icon2"></span>
+                                <span>编辑</span>
+                            </div>
+                            <div class="fl clearfix delete_btn" >
+                                <span class="icon icon3"></span>
+                                <span>删除</span>
+                            </div>
+                        </div>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>关云长</td>
+                    <td>Guan-Yunchang</td>
+                    <td>全程</td>
+                    <td>TERW000000000000008</td>
+                    <td>待完善</td>
+                    <td>2016-11-22 16：01：20</td>
+                    <td>刘鹏</td>
+                    <td >
+                        <div class="clearfix operation">
+                            <div class="fl clearfix  down_btn" >
+                                <span class="icon icon4"></span>
+                                <span>下载</span>
+                            </div>
+                            <div class="fl clearfix  edit_btn" >
+                                <span class="icon icon2"></span>
+                                <span>编辑</span>
+                            </div>
+                            <div class="fl clearfix delete_btn" >
+                                <span class="icon icon3"></span>
+                                <span>删除</span>
+                            </div>
+                        </div>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>关云长</td>
+                    <td>Guan-Yunchang</td>
+                    <td>全程</td>
+                    <td>TERW000000000000008</td>
+                    <td>待完善</td>
+                    <td>2016-11-22 16：01：20</td>
+                    <td>刘鹏</td>
+                    <td >
+                        <div class="clearfix operation">
+                            <div class="fl clearfix  down_btn" >
+                                <span class="icon icon4"></span>
+                                <span>下载</span>
+                            </div>
+                            <div class="fl clearfix  edit_btn" >
+                                <span class="icon icon2"></span>
+                                <span>编辑</span>
+                            </div>
+                            <div class="fl clearfix delete_btn" >
+                                <span class="icon icon3"></span>
+                                <span>删除</span>
+                            </div>
+                        </div>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!--弹框-->
+<div  class="pop_1">
+    <div class="pop_bd"></div>
+    <div class="pop_main">
+        <div class="pop_top clearfix">
+            <div class="top_left fl clearfix">
+                <span class="icon fl"></span>
+                <span class="text fl">修改基本信息</span>
+            </div>
+            <div class="top_right fr clearfix">
+                <span class="off_btn fr"></span>
+            </div>
+        </div>
+        <div class="pop_list">
+            <ul>
+                <li class="clearfix">
+                    <label>用户昵称：</label>
+                    <input type="text"/>
+                </li>
+                <li class="clearfix">
+                    <label>登录名称：</label>
+                    <input type="text"/>
+                </li>
+                <li class="clearfix">
+                    <label>用户分组：</label>
+                    <input type="text"/>
+                </li>
+            </ul>
+            <div class="list_btn clearfix">
+                <div class="fr clearfix">
+                    <span class="pop_save fl">保存</span>
+                    <span class="pop_cancel fl">取消</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

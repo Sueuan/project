@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="css/tree.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/tree.js"></script>
+</head>
+<body>
+<div class="pop_tree">
+    <div class="pop_bd"></div>
+    <div class="pop_main">
+        <div class="pop_top clearfix">
+            <div class="top_left fl clearfix">
+                <span class="icon fl"></span>
+                <span class="text fl">用户授权</span>
+            </div>
+            <div class="top_right fr clearfix">
+                <span class="off_btn fr"></span>
+            </div>
+        </div>
+        <div class="htmleaf-container">
+            <div class="htmleaf-content clearfix">
+                <div id="div_tree" class="fl">
+                    <ul id="tree" class="tree">
+                        <li style="position: relative">
+                            <img class="exp_col" src="images/collapse.png"/>
+                            <!--一级节点-->
+                            <span class="node_selected "><img class="icon_tree" src="images/star.png"/><img class="icon_checkbox aaa" src="images/check_no.png" alt=""/><a>数据维护</a></span>
+                            <!--一级节点-->
+                            <ul>
+                                <li>
+                                    <img  class="exp_col" src="images/expand.png"/>
+                                    <!--二级节点-->
+                                    <span class="node"><img class="icon_tree" src="images/blue_key.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>业务流程相关</a></span>
+                                    <!--二级节点-->
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/>
+                                            <!--三级节点-->
+                                            <span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>业务流程相关1</a></span><ul id="ul_node_2"></ul>
+                                            <!--三级节点-->
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>业务流程相关2</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>业务流程相关3</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>业务流程相关4</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+
+                                </li>
+                                <li>
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>合同收费代码</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码1</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码2</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码3</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码4</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>资源基础数据</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>资源基础数据1</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>资源基础数据2</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>资源基础数据3</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>资源基础数据4</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img  class="exp_col" src="images/collapse.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>合同收费代码</a>
+							</span>
+                                    <ul  style="display: block;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码1</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码2</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码3</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码4</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="last" style="background-color: white;">
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>院校系统</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>院校名录</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>专业课程</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>学分成绩</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>代办提醒</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li style="position: relative">
+                            <img  class="exp_col" src="images/expand.png"/>
+					<span class="node_selected">
+						<img class="icon_tree" src="images/star.png"/>
+						<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+						<a>咨询回访</a>
+					</span>
+                            <ul style="display: none;" >
+                                <li>
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>业务流程相关</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>业务流程相关1</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>业务流程相关2</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>业务流程相关3</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>业务流程相关4</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>合同收费代码</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码1</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码2</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码3</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码4</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>资源基础数据</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>资源基础数据1</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>资源基础数据2</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>资源基础数据3</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>资源基础数据4</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>合同收费代码</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码1</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码2</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码3</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码4</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="last" style="background-color: white;">
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>院校系统</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>院校名录</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>专业课程</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>学分成绩</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>代办提醒</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li style="position: relative">
+                            <img  class="exp_col" src="images/expand.png"/>
+					<span class="node_selected">
+						<img class="icon_tree" src="images/star.png"/>
+						<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+						<a>合同管理</a>
+					</span>
+                            <ul style="display: none;" >
+                                <li>
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>业务流程相关</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>业务流程相关1</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>业务流程相关2</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>业务流程相关3</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>业务流程相关4</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>合同收费代码</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码1</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码2</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码3</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码4</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>资源基础数据</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>资源基础数据1</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>资源基础数据2</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>资源基础数据3</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>资源基础数据4</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>合同收费代码</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码1</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码2</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码3</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码4</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="last" style="background-color: white;">
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>院校系统</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>院校名录</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>专业课程</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>学分成绩</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>代办提醒</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li style="position: relative">
+                            <img  class="exp_col" src="images/expand.png"/>
+					<span class="node_selected">
+						<img class="icon_tree" src="images/star.png"/>
+						<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+						<a>学校申请</a>
+					</span>
+                            <ul style="display: none;" >
+                                <li>
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>业务流程相关</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>业务流程相关1</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>业务流程相关2</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>业务流程相关3</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>业务流程相关4</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>合同收费代码</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码1</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码2</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码3</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码4</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>资源基础数据</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>资源基础数据1</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>资源基础数据2</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>资源基础数据3</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>资源基础数据4</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>合同收费代码</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码1</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码2</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码3</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码4</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="last" style="background-color: white;">
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>院校系统</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>院校名录</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>专业课程</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>学分成绩</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>代办提醒</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li style="position: relative">
+                            <img  class="exp_col" src="images/expand.png"/>
+					<span class="node_selected">
+						<img class="icon_tree" src="images/star.png"/>
+						<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+						<a>签证申请</a>
+					</span>
+                            <ul style="display: none;" >
+                                <li>
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>业务流程相关</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>业务流程相关1</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>业务流程相关2</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>业务流程相关3</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>业务流程相关4</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>合同收费代码</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码1</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码2</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码3</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码4</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>资源基础数据</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>资源基础数据1</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>资源基础数据2</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>资源基础数据3</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>资源基础数据4</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>合同收费代码</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码1</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码2</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码3</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码4</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="last" style="background-color: white;">
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>院校系统</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>院校名录</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>专业课程</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>学分成绩</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>代办提醒</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li style="position: relative">
+                            <img  class="exp_col" src="images/expand.png"/>
+					<span class="node_selected">
+						<img class="icon_tree" src="images/star.png"/>
+						<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+						<a>代办提醒</a>
+					</span>
+                            <ul style="display: none;" >
+                                <li>
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>业务流程相关</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>业务流程相关1</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>业务流程相关2</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>业务流程相关3</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>业务流程相关4</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>合同收费代码</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码1</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码2</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码3</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码4</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>资源基础数据</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>资源基础数据1</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>资源基础数据2</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>资源基础数据3</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>资源基础数据4</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>合同收费代码</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码1</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码2</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码3</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码4</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="last" style="background-color: white;">
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>院校系统</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>院校名录</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>专业课程</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>学分成绩</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>代办提醒</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li style="position: relative">
+                            <img  class="exp_col" src="images/expand.png"/>
+					<span class="node_selected">
+						<img class="icon_tree" src="images/star.png"/>
+						<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+						<a>资源入口</a>
+					</span>
+                            <ul style="display: none;" >
+                                <li>
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>业务流程相关</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>业务流程相关1</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>业务流程相关2</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>业务流程相关3</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>业务流程相关4</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>合同收费代码</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码1</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码2</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码3</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码4</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>资源基础数据</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>资源基础数据1</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>资源基础数据2</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>资源基础数据3</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>资源基础数据4</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>合同收费代码</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码1</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码2</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码3</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码4</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="last" style="background-color: white;">
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>院校系统</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>院校名录</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>专业课程</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>学分成绩</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>代办提醒</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li style="position: relative">
+                            <img  class="exp_col" src="images/expand.png"/>
+					        <span class="node_selected">
+					        	<img class="icon_tree" src="images/star.png"/>
+					        	<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+					        	<a>文书中心</a>
+					        </span>
+                            <ul style="display: none;" >
+                                <li>
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>业务流程相关</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>业务流程相关1</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>业务流程相关2</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>业务流程相关3</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>业务流程相关4</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>合同收费代码</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码1</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码2</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码3</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码4</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>资源基础数据</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>资源基础数据1</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>资源基础数据2</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>资源基础数据3</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>资源基础数据4</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>合同收费代码</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码1</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码2</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码3</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码4</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="last" style="background-color: white;">
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>院校系统</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>院校名录</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>专业课程</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>学分成绩</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>代办提醒</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--最后一个li变属性 position: relative;-->
+                        <li class="last" style="background-color: white; position: relative;">
+                            <!--下面的img改变属性display：block-->
+                            <img  class="exp_col" src="images/expand.png" style="display: block;"/>
+					        <span class="node">
+					        	<img class="icon_tree" src="images/star.png"/>
+					        	<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+					        	<a>绩效管理</a>
+                            </span>
+                            <!--12.2发研发后补-->
+                            <ul style="display: none;" >
+                                <li>
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>业务流程相关</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>业务流程相关1</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>业务流程相关2</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>业务流程相关3</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>业务流程相关4</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>合同收费代码</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码1</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码2</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码3</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码4</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>资源基础数据</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>资源基础数据1</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>资源基础数据2</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>资源基础数据3</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>资源基础数据4</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>合同收费代码</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码1</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码2</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码3</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>合同收费代码4</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="last" style="background-color: white;">
+                                    <img  class="exp_col" src="images/expand.png"/>
+							<span class="node">
+								<img class="icon_tree" src="images/blue_key.png"/>
+								<img class="icon_checkbox" src="images/check_no.png" alt=""/>
+								<a>院校系统</a>
+							</span>
+                                    <ul  style="display: none;">
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>院校名录</a></span><ul id="ul_node_2"></ul>
+                                        </li>
+                                        <li>
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>专业课程</a></span><ul id="ul_node_3"></ul>
+                                        </li>
+                                        <li class="" style="background-color: transparent;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>学分成绩</a></span><ul id="ul_node_4"></ul>
+                                        </li>
+                                        <li class="last" style="background-color: white;">
+                                            <img  class="exp_col" src="images/expand.png" style="visibility: hidden;"/><span class="node"><img class="icon_tree" src="images/monitor.png"/><img class="icon_checkbox" src="images/check_no.png" alt=""/><a>代办提醒</a></span><ul id="ul_node_5"></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul id="ul_node_189"></ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="fl list_main">
+                    <ul class="clearfix">
+                        <li>
+                            <label>角色编码：</label>
+                            <input type="text"/>
+                        </li>
+                        <li>
+                            <label>角色编码：</label>
+                            <input type="text"/>
+                        </li>
+                        <li>
+                            <label>角色编码：</label>
+                            <input type="text"/>
+                        </li>
+                        <li>
+                            <label>角色编码：</label>
+                            <input type="text"/>
+                        </li>
+                    </ul>
+                    <div class="details_con ">
+                        <label>描述：</label>
+                        <textarea ></textarea>
+                    </div>
+                    <div class="pop_list">
+                        <div class="list_btn clearfix">
+                            <div class="fr clearfix">
+                                <span class="pop_save fl">保存</span>
+                                <span class="pop_cancel fl">取消</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
